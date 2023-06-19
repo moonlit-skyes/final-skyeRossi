@@ -1,0 +1,191 @@
+/* general styles */
+header {
+
+}
+footer {
+    background-color: blueviolet;
+    
+}
+body {
+    background-color: darkorchid;
+}
+p {
+    text-decoration-color: aquamarine;
+    text-decoration: dashed;
+    border: 1px;
+    border-style: dashed;
+    border-color: plum;
+    background-color: purple;
+    color: plum;
+}
+a {
+    color: white;
+img {
+    object-fit: contain;
+}
+form {
+    object-fit: contain
+}
+/* my beloved */
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* div and grid settings */
+.header_grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "heading heading heading" "landing projects contact";
+    background-color: darkmagenta;
+}
+.heading {
+    display: block;
+    grid-area: heading;
+    margin-left: auto;
+    margin-right: auto;
+}
+.landing {
+    display: block;
+    grid-area: landing;
+    margin-left: auto;
+    margin-right: auto;
+}
+.projects {
+    display: block;
+    grid-area: projects;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contact {
+    display: block;
+    grid-area: contact;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content_grid {
+    display: grid;
+    max-width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "picture1 text1a text2a" "text1b text2b picture2" "picture3 text1c text2c" "text1d text2d picture4" "picture5 text1e text2e";
+}
+.picture1 {
+    display: flex;
+    grid-area: picture1;
+    height: auto;
+}
+.picture2 {
+    display: block;
+    grid-area: picture2;
+    height: auto;
+}
+.picture3 {
+    display: block;
+    grid-area: picture3;
+    height: auto;
+}
+.picture4 {
+    display: block;
+    grid-area: picture4;
+    height: auto;
+}
+.picture5 {
+    display: block;
+    grid-area: picture5;
+    height: auto;
+}
+.text1a {
+    display: block;
+    grid-area: text1a;
+    height: auto;
+}
+.text1b {
+    display: block;
+    grid-area: text1b;
+    height: auto;
+}
+.text1c {
+    display: block;
+    grid-area: text1c;
+    height: auto;
+}
+.text1d {
+    display: block;
+    grid-area: text1d;
+    height: auto;
+}
+.text1e {
+    display: block;
+    grid-area: text1e;
+    height: auto;
+}
+.text2a {
+    display: block;
+    grid-area: text2a;
+    height: auto;
+}
+.text2b {
+    display: block;
+    grid-area: text2b;
+    height: auto;
+}
+.text2c {
+    display: block;
+    grid-area: text2c;
+    height: auto;
+}
+.text2d {
+    display: block;
+    grid-area: text2d;
+    height: auto;
+}
+.text2e {
+    display: block;
+    grid-area: text2e;
+    height: auto;
+}
+/* alt media settings */
+@media screen and (max-width: 960px){
+    .content_grid {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "picture1 text1a"
+        "text2a text1b" 
+        "text2b picture2" 
+        "picture3 text1c" 
+        "text2c text1d" 
+        "text2d picture4" 
+        "picture5 text1e" 
+        "text2e";
+    }
+}
+/* iphone */
+@media screen and (max-width: 768px){
+    .content_grid {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "picture1""text1a"
+        "text2a" "text1b" 
+        "text2b" "picture2" 
+        "picture3" "text1c" 
+        "text2c" "text1d" 
+        "text2d" "picture4" 
+        "picture5" "text1e" 
+        "text2e";
+    }
+}
+/* removing images if its printed */
+@media print {
+    img {
+        display: none;
+    }
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+/* iphone */
+@media screen and (max-width: 768px){
+    .content_grid {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "picture1""text1a"
+        "text2a" "text1b" 
+        "text2b" "picture2" 
+        "picture3" "text1c" 
+        "text2c" "text1d" 
+        "text2d" "picture4" 
+        "picture5" "text1e" 
+        "text2e";
+    }
+}
+/* removing images if its printed */
+@media print {
+    img {
+        display: none;
+    }
+}
+    </style>
+</head>
+<header>
+    <div class="header_grid">
+        <heading class="heading">
+            <img height="200" width="300" src="Images/logo.png"></img>
+        </heading>
+        <landing class="landing">
+            <p><a href="landing.html">Home</a></p>
+        </landing>
+        <projects class="projects">
+            <p><a href="projects.html">Examples</a></p>
+        </projects>
+        <contact class="contact">
+            <p><a href="contact.html">Contact Me</a></p>
+        </contact>
+    </div>
+</header>
+<body>
+    <div class="content_grid">
+        <picture1 class="picture1">
+            <img width=100% src="Images/website.png"></img>
+        </picture1>
+        <text1a class="text1a">
+            <p>Project One: Most relevant to this website, HTML! I've made several websites and this, other, most recent website is currently my favorite of the bunch, even if its a bit garish in some aspects.</p>
+        </text1a>
+        <text2a class="text2a">
+            <p>While uninteractable at the current moment I hope the screen shot will suffice until I can figure out how to compress a website into an iframe.</p>
+        </text2a>
+        <text1b class="text1b">
+            <P>One of my favorite parts of working in C# is that forms aren't manual when it comes to visual design.</P>
+        </text1b>
+        <text2b class="text2b">
+            <p>Project Two: I've also coded in other languages! Like C# for instance. I've made several applications in the language!</p>
+        </text2b>
+        <picture2 class="picture2">
+            <img width=100% src="Images/program.png"></img>
+        </picture2>
+        <picture3 class="picture3">
+            <img width=100% src="Images/card.png"></img>
+        </picture3>
+        <text1c class="text1c">
+            <p>Project Three: Graphic design is also something I've been working on in my spare time! The art was commissioned from a lovely artist known as Artcher Artwork, I modified it heavily for use in the card.</p>
+        </text1c>
+        <text2c class="text2c">
+            <p>This is a Magic: the Gathering card based off one of my D&D characters Tik-Tak the owl! She uses a deck of cards to cast spells and defend herself as she assists the feywild carnival.</p>
+        </text2c>
+        <text1d class="text1d">
+            <p>Graphic design also applies to some original work I do artwork wise. This is a painting I made recently of a childhood favorite of mine, Diaboromon.</p>
+        </text1d>
+        <text2d class="text2d">
+            <p>Project Four: A playmat that I've designed entirely on my own with artwork of my own for the Digimon TCG. I play competitively by virtue of the entry fee of $5 that I pay every other Tuesday. I do not win much.</p>
+        </text2d>
+        <picture4 class="picture4">
+            <img width=100% src="Images/playmat.png"></img>
+        </picture4>
+        <picture5 class="picture5">
+            <iframe width=100% src="https://docs.google.com/document/d/e/2PACX-1vShbuHsWflw7s1lcfM113IoDXtYL_gtj3uxrtM9FivRFBHuf5sfhV4kRFOoFrZaCNXNpPwvrJtVGszr/pub?embedded=true"></iframe>
+        </picture5>
+        <text1e class="text1e">
+            <p width=100%>Project Five: In addition to my other creative works I'm a writer! Mostly with short stories but I'm also good at writing to fufill demand. I once ghost wrote a dog's autobiography. Only one copy was published though so if you find "Brutus's Meandering Journy" just know it was me.</p>
+        </text1e>
+        <text2e class="text2e">
+            <iframe width=100% src="https://docs.google.com/document/d/e/2PACX-1vQ28nrNpsZ-O7dG_O21jHzcg-gBtaCPxuaIU0Vk7M8yAHZio4NwIklx4RlMRcsVT7GEm9EsMnvZtOFU/pub?embedded=true"></iframe>
+        </text2e>
+    </div>
+</body>
+<footer>
+        Tik-Tak Bust Artwork © <a href="https://twitter.com/artcher_artwork">Artcher Artwork</a><br>
+        All other work © Skye Moon
+</footer>
+</html>
